@@ -1,0 +1,25 @@
+
+@font-face
+{
+    src: url(../../assets/font/Galada-Regular.ttf);
+    font-family: lolo;
+}
+
+
+
+img
+{
+    height: 200px;
+}
+
+div
+{
+    font-family: lolo;
+}
+
+.search
+{
+    width: 500px;
+    margin: auto;
+    
+}

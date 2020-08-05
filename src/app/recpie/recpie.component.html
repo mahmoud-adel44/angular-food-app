@@ -1,0 +1,30 @@
+
+
+
+<!-- <div *ngIf="loaded == true" class="container">
+    <div  class="row">
+        <div class="col-md-9">
+            <img [src]="mydata.image_url" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9">
+            <ul>
+                <li *ngFor="let i of intg" class="text-white">{{i}}</li>
+            </ul>
+        </div>
+    </div>
+</div> -->
+
+
+<div *ngIf="loaded == true" class="card card-mine" style="width: 18rem;">
+    <img [src]="mydata.image_url" class="card-img-top">
+    <div class="card-body">
+        
+      <!-- <h1 *ngFor="let x of mydata|search"> <li  class="text-white">{{x.title}}</li> </h1>       -->
+        <ul>
+            
+            <li *ngFor="let i of intg"  class="text-dark">{{i}}</li>
+        </ul>
+    </div>
+  </div>

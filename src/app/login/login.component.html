@@ -1,0 +1,28 @@
+
+<form [formGroup]='mydata' (ngSubmit)="getLoginData(mydata)" class="w-75 m-auto py-4">
+
+    <div class="form-group">
+        <label > Email :</label>
+        <input [class.is-invalid]="mydata.get('email').invalid==true && mydata.get('email').touched==true" formControlName='email' type="email" class="form-control">
+        <div *ngIf="mydata.get('email').invalid==true && mydata.get('email').touched==true" class="alert alert-danger" role="alert">
+            Your Email is Invaild
+          </div>
+    </div>
+    
+    <div class="form-group">
+        <label > password :</label>
+        <input  [class.is-invalid]="mydata.get('password').invalid==true && mydata.get('password').touched==true" formControlName='password' type="password" class="form-control">
+        <div *ngIf="mydata.get('password').invalid==true && mydata.get('password').touched==true"  class="alert alert-danger" role="alert">
+           Password is Invaild
+          </div>
+    </div>
+    
+    <div class="py-5">
+         <a routerLink='/register'>register ??</a>
+    </div>
+    
+    <button  type="submit" class="btn btn-success">sigin</button>
+    
+    
+    
+    </form> 
